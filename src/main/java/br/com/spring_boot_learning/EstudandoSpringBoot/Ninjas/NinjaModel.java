@@ -1,10 +1,13 @@
-package br.com.spring_boot_learning.EstudandoSpringBoot;
+package br.com.spring_boot_learning.EstudandoSpringBoot.Ninjas;
 
+import br.com.spring_boot_learning.EstudandoSpringBoot.Missoes.MissoesModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 // Entity transforma classe em entidade do database
 @Entity
-@Table(name = "tb_cadastro")
+@Table(name = "tb_ninjas")
 public class NinjaModel {
 
     @Id
@@ -13,6 +16,11 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+
+    // @ManyToOne um ninja tem uma unica missao
+    @ManyToOne
+    @JoinColumn(name = "missoes_id") // Foreing Key ou chave estrangeira
+    private MissoesModel missoes;
 
     public NinjaModel() {
     }

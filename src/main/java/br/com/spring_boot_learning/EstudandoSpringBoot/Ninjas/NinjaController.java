@@ -1,4 +1,4 @@
-package br.com.spring_boot_learning.EstudandoSpringBoot;
+package br.com.spring_boot_learning.EstudandoSpringBoot.Ninjas;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
