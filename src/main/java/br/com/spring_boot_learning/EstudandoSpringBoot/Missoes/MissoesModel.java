@@ -3,11 +3,18 @@ package br.com.spring_boot_learning.EstudandoSpringBoot.Missoes;
 
 import br.com.spring_boot_learning.EstudandoSpringBoot.Ninjas.NinjaModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Table (name = "tb_missoes")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class MissoesModel {
 
     @Id
