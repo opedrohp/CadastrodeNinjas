@@ -3,7 +3,7 @@ package br.com.spring_boot_learning.EstudandoSpringBoot.Missoes;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("missoes")
+@RequestMapping("/missoes")
 
 public class MissoesController {
 

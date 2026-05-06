@@ -3,7 +3,7 @@ package br.com.spring_boot_learning.EstudandoSpringBoot.Ninjas;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping
+@RequestMapping("/ninjas")
 
 public class NinjaController {
 
@@ -19,14 +19,14 @@ public class NinjaController {
     }
 
     // Mostrar todos os ninjas (READ)
-    @GetMapping("/all")
+    @GetMapping("/listar")
     public String mostrarTodosOsNinjas(){
         return "Mostrar Ninja";
     }
 
 
     // Mostrar Ninjas por id (READ)
-    @GetMapping("/todosID")
+    @GetMapping("/listarID")
     public String mostrarTodosOsNinjasPorID(){
         return "Mostrar por ID";
     }
