@@ -10,7 +10,7 @@ public class MissoesController {
     // Mandar requisição para listar missao (GET)
     @GetMapping("/listar")
     public String listarMissoes(){
-        return "Missoes listadas com sucesso"
+        return "Missoes listadas com sucesso";
     }
 
 
